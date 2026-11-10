@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 import {OrderSummary} from './OrderSummary';
 
 import { formatMoney } from '../../utils/money';
-import './checkout-header.css';
+import '../checkout-header.css';
 import './CheckoutPage.css';
 
-export function CheckoutPage({ cart }) {
+export function CheckoutPage({ cart = [] }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
   const [paymentSummary, setPaymentSummary] = useState(null);
 
@@ -40,7 +40,7 @@ export function CheckoutPage({ cart }) {
           </div>
 
           <div className="checkout-header-middle-section">
-            Checkout (<a className="return-to-home-link" href="/">{} items</a>)
+            Checkout (<a className="return-to-home-link" href="/">{cart.length} items</a>)
           </div>
 
           <div className="checkout-header-right-section">
