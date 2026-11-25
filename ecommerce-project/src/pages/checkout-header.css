@@ -27,7 +27,7 @@
 }
 
 .checkout-header .logo {
-  height: 26px;
+  height: 30px;
   margin-top: 0px;
 }
 
@@ -45,12 +45,12 @@
   }
 
   .checkout-header .logo {
-    display: none;
+    display: inline-block;
+    height: 20px;
   }
 
   .checkout-header .mobile-logo {
-    display: inline-block;
-    height: 26px;
+    display: none;
   }
 }
 
@@ -67,7 +67,7 @@
 }
 
 .checkout-header .return-to-home-link {
-  color: rgb(25, 135, 84);
+  color: rgb(0, 71, 245);
 
   text-decoration: none;
   cursor: pointer;
